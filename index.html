@@ -1,0 +1,102 @@
+<!doctype html>
+<html ng-app="perevozchik74App">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+    <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
+</head>
+<body ng-controller="controller">
+	<div class="d-flex flex-md-row flex-column align-items-center p-2 px-2 shadow bg-dark text-light logoblock">
+			<img src="img/logo.jpg" class="rounded-circle logo-size mr-3 ml-3 border-danger border border-2">
+			<div class="d-flex flex-column mr-auto"> 
+				<h5>Грузоперевозки</h5>
+				<div class="logoBlock-text text-danger">В любую точку России</div>
+			</div>
+			<div class="d-flex flex-column ml-auto mr-3 text-right">
+				<div> +7 (909) 089-53-29  <nobr class="text-danger">Руслан  </nobr>(диспетчер)</div>
+				<div> +7 (922) 655-93-02  <nobr class="text-danger">Рамиль </nobr>(перевозчик)</div>
+                <div> +7 (902) 855-21-65  <nobr class="text-danger">Шамиль </nobr>(перевозчик)</div>
+			</div>
+	</div>
+	<div class="position-absolute title-background">
+		<div class="d-flex align-items-end mr-3 mt-4">
+			<h1 class="text-danger px-2">
+				<nobr ng-repeat="letter in mess" ng-class="letter.class">{{letter.letter}}</nobr>
+			</h1>
+		</div>
+	</div>
+	<img src="img/background.jpg" class="w-100 background-image">
+    <ng-include src="'page/about.html'"></ng-include>
+    <ng-include src="'page/usl.html'"></ng-include>
+    <ng-include src="'page/about.html'"></ng-include>
+    <img src="img/tiles.jpg" class="h-auto w-100 background-image position-absolute">
+	<div class="d-flex justify-content-between align-items-center">
+		<div class="my-3 p-3 w-25 mx-4 text-center">
+			<img src="img/usl-1.jpg" class="w-100 usl-pic border border-dark border-3">
+			<div class="bg-dark p-3 text-light">Адекватные цены</div>
+		</div>
+		<div class="my-3 p-3 w-25 mx-4 text-center">
+			<img src="img/usl-2.jpg" class="w-100 usl-pic border border-dark border-3">
+			<div class="bg-dark p-3 text-light">Быстрая доставка</div>
+		</div>
+		<div class="my-3 p-3 w-25 mx-4 text-center">
+			<img src="img/usl-3.jpg" class="w-100 usl-pic border border-dark border-3">
+			<div class="bg-dark p-3 text-light">Бережное отношение</div>
+		</div>
+	</div>
+    <div class="d-flex flex-column align-items-center pt-3 px-2 shadow bg-dark text-light logoblock">
+        <h4 class="mt-2 about">КОНТАКТЫ</h4>
+        <div class="w-100 bg-dark"> <hr class="fancy-line"></div>
+    </div>
+    <div class="d-flex align-content-between bg-dark">
+        <div class="d-flex flex-column align-items-start px-4 pb-1 bg-dark text-light logoblock">
+            <div class="d-flex mx-3 pb-3 text-center  about-text">
+                <a href="https://vk.com/ramil140281" target="_blank" class="px-2"><img src="img/ico/vk.png" alt=""></a>
+                <a href="https://www.ok.ru/profile/348384642077" target="_blank" class="px-3"><img src="img/ico/ok.png" alt=""></a>
+            </div>
+            <div class="telefont mt-auto"><img src="img/ico/tp.png" class="mx-3 px-2 py-1"  alt=""> +7 (909) 089-53-29  Руслан (диспетчер)</div>
+            <div class="telefont"><img src="img/ico/tp.png" class="mx-3 px-2 py-1"  alt=""> +7 (922) 655-93-02  Рамиль (перевозчик)</div>
+            <div class="telefont"><img src="img/ico/tp.png" class="mx-3 px-2 py-1"  alt=""> +7 (902) 855-21-65  Шамиль (перевозчик)</div>
+            <div class="telefont py-2"><img src="img/ico/mp.png" class="mx-3 px-2"  alt=""> г. Нижневартовск</div>
+            <a href="mailto:ramil140281.81@mail.ru" class="mx-3 py-1 telefont"><img src="img/ico/email.png" class="mr-3 px-2 "  alt=""> ramil140281.81@mail.ru</a>
+            <a href="mailto:ramil140281.81@mail.ru" class="mx-3 py-1 telefont"><img src="img/ico/email.png" class="mr-3 px-2 "  alt=""> lionrus74@mail.ru</a>
+            <div class="telefont mx-3 px-2 mt-auto mb-2">2018 © СЕВЕР-ЭКСПРЕСС <br/> Грузоперевозки Нижневартовск</div>
+        </div>
+        <div class="ml-auto d-flex flex-column py-2 d-inline-block form-block">
+            <form>
+                <div class="form-group column px-4 ml-2 text-light ">
+                    <div class="row pt-2">
+                        <h5 class="text-zay text-center pt-2">Заполните заявку</h5>
+                        <img class="ml-auto mr-3" src="img/ico/send.png" ng-mousedown="sendMessage()">
+                    </div>
+                    <div class="w-100 bg-dark"> <hr class="fancy-line"></div>
+                    <div class="row pt-2">
+                        <label for="inputName" class="col-form-label">Ваше имя:</label>
+                        <div class="ml-auto col-8">
+                            <input type="text" id="inputName" placeholder="Иван Иванович" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="inputSvyaz" class="col-form-label">Телефон или Email:</label>
+                        <div class="ml-auto col-8">
+                            <input type="text" id="inputSvyaz" placeholder="email@example.com" class="form-control form-control-sm">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="inputDetail" class="col-form-label my-auto">Детали заявки:</label>
+                        <div class="ml-auto col-8">
+                            <textarea  type="text" id="inputDetail" rows="6" placeholder="Описание груза, необходимые габариты машины" class="form-control form-control-sm"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+	<script src="ang.js"></script>
+    <script src="sendmail.js"></script>
+</body>
+</html>

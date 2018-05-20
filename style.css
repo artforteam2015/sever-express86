@@ -1,0 +1,169 @@
+body{
+    font-family: 'Open Sans', arial;
+}
+h1{
+    font-size: 35px;
+}
+.logo-size{
+	width:50px;
+	height: 50px;
+	object-fit: cover;
+}
+
+.logoBlock-text{
+	font-size: 10px;
+}
+
+.logoBlock{
+	z-index: 10;
+}
+
+.background-image{
+	z-index: -1;
+}
+
+
+.border-2{
+	border-width: 2px !important;
+}
+
+.border-3{
+	border-width:3px !important;
+}
+
+.usl-pic{
+	height:60%;
+	object-fit: cover;
+}
+
+.titleBox-shadow{
+	background: rgba(77,77,77,0.1);
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.title-background{
+	right: 1px;
+}
+
+.textLetters{
+
+}
+
+.textLettersEnter.ng-enter {
+	transition:all ease-in 0.25s;
+    opacity:0;
+}
+
+.textLettersEnter.ng-enter.ng-enter-active {
+    transition:all ease-in 0.25s;
+    opacity:1;
+}
+
+.textLettersLeave {
+    transition:all ease-in 0.25s;
+	padding-down: 5px;
+    opacity:0;
+}
+
+.about-text{
+    color: #a2a09f;
+}
+
+hr.fancy-line {
+    border: 0;
+    height: 1px;
+    position: relative;
+}
+
+hr.fancy-line {
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.1) 0%,rgba(0,0,0,0) 75%);
+}
+
+
+
+@font-face {
+    font-family: Stolzl-Thin;
+    src: local(pompadur), url(./font/11451.otf);
+}
+
+.about{
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-family: Stolzl-Thin;
+}
+
+.telefont{
+    font-size:14px;
+}
+
+.form-block{
+    background: #3c4248;
+    border-radius: 5px;
+    width: 40%;
+    margin-right: 2.5rem;
+    margin-bottom: 1rem;
+}
+.text-zay{
+    margin-left:32%;
+}
+
+.usl1-box {
+    transition: 0.8s ease-in-out;
+    transform-style: preserve-3d;
+    transform-origin: center 50% 0;
+}
+
+.usl-1 {
+    transform: translateZ(0.1em);
+}
+.usl-2 {
+    transform: translateZ(-2em) scaleX(-1);
+}
+.usl-2-col {
+    transform: translateZ(-2em) rotateX(180deg);
+}
+
+.usl-2-col-scale {
+    transform: scaleY(-1);
+}
+
+
+.usl-2-rev {
+    transform: translateZ(-2em) rotateX(-180deg);
+}
+
+.usl-3 {
+    transform: translateZ(0.8em);
+}
+
+
+.usl1-box-hoverrow{
+    transform: rotateY(180deg);
+}
+.usl1-box-hovercol{
+    transform: rotateX(-180deg);
+}
+.usl1-box-hovercolrev{
+    transform: rotateX(180deg);
+}
+.usl1-box-hoverrev{
+    transform: rotateY(-180deg);
+}
+
+.usl-pre{
+    white-space: pre-line;
+}
+
+.wraptext{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.usl-top{
+    background: rgba(255,255,255,0.7)
+}
+
+.no-margin{
+    padding: 0 !important;
+}

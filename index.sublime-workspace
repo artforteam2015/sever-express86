@@ -1,0 +1,336 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"getM",
+				"getMinutes\t(): int Date"
+			],
+			[
+				"mes",
+				"messageMass"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"j",
+				"justify-content-center\t bootstrap.css"
+			],
+			[
+				"text-da",
+				"text-danger\t bootstrap.css"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"bg-d",
+				"bg-dark\t bootstrap.css"
+			],
+			[
+				"alig",
+				"align-items-end\t bootstrap.css"
+			],
+			[
+				"justi",
+				"justify-content-end\t bootstrap.css"
+			],
+			[
+				"font-we",
+				"font-weight-bold\t bootstrap.css"
+			],
+			[
+				"bo",
+				"border-danger\t bootstrap.css"
+			],
+			[
+				"align-ite",
+				"align-items-center\t bootstrap.css"
+			],
+			[
+				"pos",
+				"position-relative\t bootstrap.css"
+			],
+			[
+				"class",
+				"class\tAttr"
+			],
+			[
+				"w",
+				"w-100\t bootstrap.css"
+			],
+			[
+				"border",
+				"border-danger\t bootstrap.css"
+			],
+			[
+				"objec",
+				"object-fit\tproperty"
+			],
+			[
+				"righ",
+				"float-right\t bootstrap.css"
+			],
+			[
+				"justify-content-",
+				"justify-content-around\t bootstrap.css"
+			],
+			[
+				"just",
+				"justify-content-between\t bootstrap.css"
+			],
+			[
+				"right",
+				"float-right\t bootstrap.css"
+			],
+			[
+				"block",
+				"head-block\t style.css"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"sty",
+				"stylesheet"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"pa",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"INSTA\t",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"package con",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Timmi/full-wario-bot/app/index.js",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/C/Users/Timmi/full-wario-bot/app/work.todo",
+		"/C/Users/Timmi/sublime/htmlAngular/style.css",
+		"/C/Users/Timmi/AppData/Local/Temp/Rar$DRa0.316/css/bootstrap.min.css",
+		"/C/Users/Timmi/sublime/htmlAngular/bootstrap.css",
+		"/C/Users/Timmi/sublime/htmlAngular/first.html",
+		"/C/Users/Timmi/sublime/htmlAngular/ang.js",
+		"/C/Users/Timmi/sublime/htmlAngular/index.html",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/CSS Extended Completions/css_style_completions.sublime-settings",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/User/css_style_completions.sublime-settings",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/User/chrome.sublime-build",
+		"/C/Users/Timmi/AppData/Local/Temp/Rar$DRa0.391/css/bootstrap.css",
+		"/C/Users/Timmi/AppData/Local/Temp/Rar$DRa0.072/css/bootstrap.min.css",
+		"/C/Users/Timmi/htmlAngular/bootstrap.min.css",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/C/Users/Timmi/AppData/Roaming/Sublime Text 3/Packages/Colorcoder/colorcoder.sublime-settings",
+		"/C/Users/Timmi/htmlAngular/index.html",
+		"/C/Users/Timmi/Desktop/style.css",
+		"/C/Users/Timmi/Desktop/normalize.css",
+		"/C/Users/Timmi/Desktop/vizitka.html",
+		"/C/Users/Timmi/Desktop/vizitkaj.css",
+		"/C/Users/Timmi/Desktop/Без имени-1.png"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/User/chrome.sublime-build",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 151.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
