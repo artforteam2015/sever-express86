@@ -1,4 +1,4 @@
-
+﻿
 var fs = require("fs")
 var express = require("express");
 var app = express();
@@ -21,5 +21,5 @@ app.get("/*", function(request, response){
         return;
     })
 });
-// начинаем прослушивание подключений на 3000 порту
-app.listen(3000,()=>console.log('server started'));
+// начинаем прослушивание подключений на 80 порту
+app.listen(80,()=>console.log('server started'));
