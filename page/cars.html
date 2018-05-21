@@ -1,0 +1,15 @@
+<div class="bg-dark cursor-def">
+	<h4 class="pt-4 pb-2 about text-light text-center">ВИДЫ ТРАНСПОРТА</h4>
+    <hr class="fancy-line">
+	<div class="text-dark d-flex flex-md-row flex-column px-4">
+		<div ng-repeat="car in cars" class="col-md-3 my-1">
+				<div class="rounded-circle text-center mx-auto car-container">
+						<h5 class="lato-text pt-5 pb-3">{{car.name}}</h5>
+						Грузоподъемность: {{car.weight}} т.<br/>
+						Объем: {{car.scope}} м<sup>3</sup>
+				</div>
+		</div>
+	</div>
+	<div><hr class="fancy-line"></div>
+	<div class="text-dark">a</div>
+</div>
