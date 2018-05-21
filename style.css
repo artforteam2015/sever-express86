@@ -161,9 +161,13 @@ hr.fancy-line {
 }
 
 .usl-top{
-    background: rgba(255,255,255,0.7)
+    background: rgba(255,255,255,0.7);
 }
 
 .no-margin{
     padding: 0 !important;
+}
+
+.cursor-send{
+cursor: pointer;
 }

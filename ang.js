@@ -1,5 +1,6 @@
-﻿var myApp=angular.module('perevozchik74App', ['ngAnimate']);
-myApp.controller('controller', function($scope) {
+﻿var myApp=angular.module('perevozchik74App', ['ngAnimate','ngRoute']);
+
+myApp.controller('controller', ["$scope", "$http" , function($scope,$http) {
 
     var messageMass = ['Отлаженная схема работы', 'Большой опыт работы с переездами', 'Индивидуальный подбор машины'];
     $scope.message = messageMass[0];
@@ -72,10 +73,6 @@ myApp.controller('controller', function($scope) {
 
         }, 1000)
     }, endTime)
-
-    $scope.sendMessage = function () {
-
-    }
 
 
     $scope.usls = [
@@ -157,7 +154,7 @@ myApp.controller('controller', function($scope) {
         description:'Транспортная компания «СЕВЕР ЭКСПРЕСС» профессионально занимается'
                     +' перевозкой грузов. \nМы используем передовые системы'
                     +' автоматизации перевозок.'
-                    +' Наши машины оперативно перевезут Ваш груз в любую точку России. \nЗаранее'
+                    +' Наши машины оперативно перевезут Ваш груз \nв Ханты-Мансийский Автономный округ или любую другую точку России. \nЗаранее'
                     +' разработанный маршрут позволит сделать это в короткие сроки. Мы ценим время и'
                     +' деньги наших клиентов.'
                     +' \nМы стремимся к тому, чтобы издержки клиента на транспортные расходы были как'
@@ -176,4 +173,16 @@ myApp.controller('controller', function($scope) {
                     '\nОформите заказ и мы подберем машину под ваши нужды.'
     }
     ]
-});
+
+    $scope.sendMessage = function() {
+        var ClientName = document.getElementById("inputName").value;
+	document.getElementById("inputName").value = '';
+        var ClientSvyaz = document.getElementById("inputSvyaz").value;
+	document.getElementById("inputSvyaz").value = '';
+        var ClientDetail = document.getElementById("inputDetail").value;
+	document.getElementById("inputDetail").value = '';
+        var data = {name: ClientName, svyaz: ClientSvyaz, detail: ClientDetail};
+    $http.post("/sendmessage", data)
+    }
+
+}]);

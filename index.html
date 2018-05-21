@@ -1,17 +1,23 @@
-<!doctype html>
+﻿<!doctype html>
 <html ng-app="perevozchik74App">
+
 <head>
+
+	<meta name="fragment" content="!">
+  	<title>Грузоперевозки СЕВЕР-ЭКСПРЕСС</title>
+	<meta name="Keywords" content="Грузоперевозки, ХМАО, Ханты-Мансийский Автономный округ, Ханты-Мансийский, по России">
+  	<meta name="description" content="Грузоперевозки по ХМАО и всей России. Квартирные переезды, офисные переезды, груз 200, международные грузоперевозки, скоропортящиеся продукты и т.д.">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-    <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
+        <link href="http://allfont.ru/allfont.css?fonts=open-sans" rel="stylesheet" type="text/css" />
 </head>
 <body ng-controller="controller">
 	<div class="d-flex flex-md-row flex-column align-items-center p-2 px-2 shadow bg-dark text-light logoblock">
 			<img src="img/logo.jpg" class="rounded-circle logo-size mr-3 ml-3 border-danger border border-2">
 			<div class="d-flex flex-column mr-auto"> 
 				<h5>Грузоперевозки</h5>
-				<div class="logoBlock-text text-danger">В любую точку России</div>
+				<div class="logoBlock-text text-danger">В ХМАО и любую точку России</div>
 			</div>
 			<div class="d-flex flex-column ml-auto mr-3 text-right">
 				<div> +7 (909) 089-53-29  <nobr class="text-danger">Руслан  </nobr>(диспетчер)</div>
@@ -61,14 +67,14 @@
             <div class="telefont py-2"><img src="img/ico/mp.png" class="mx-3 px-2"  alt=""> г. Нижневартовск</div>
             <a href="mailto:ramil140281.81@mail.ru" class="mx-3 py-1 telefont"><img src="img/ico/email.png" class="mr-3 px-2 "  alt=""> ramil140281.81@mail.ru</a>
             <a href="mailto:ramil140281.81@mail.ru" class="mx-3 py-1 telefont"><img src="img/ico/email.png" class="mr-3 px-2 "  alt=""> lionrus74@mail.ru</a>
-            <div class="telefont mx-3 px-2 mt-auto mb-2">2018 © СЕВЕР-ЭКСПРЕСС <br/> Грузоперевозки Нижневартовск</div>
+            <div class="telefont mx-3 px-2 mt-auto mb-2">2018 © СЕВЕР-ЭКСПРЕСС <br/> Грузоперевозки Ханты-Мансийский Автономный округ</div>
         </div>
         <div class="ml-auto d-flex flex-column py-2 d-inline-block form-block">
             <form>
                 <div class="form-group column px-4 ml-2 text-light ">
                     <div class="row pt-2">
                         <h5 class="text-zay text-center pt-2">Заполните заявку</h5>
-                        <img class="ml-auto mr-3" src="img/ico/send.png" ng-mousedown="sendMessage()">
+                        <img class="ml-auto mr-3 cursor-send" src="img/ico/send.png" ng-click="sendMessage()">
                     </div>
                     <div class="w-100 bg-dark"> <hr class="fancy-line"></div>
                     <div class="row pt-2">
@@ -96,6 +102,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.min.js"></script>
 	<script src="ang.js"></script>
     <script src="sendmail.js"></script>
 </body>
