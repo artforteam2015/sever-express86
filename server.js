@@ -3,7 +3,7 @@ var fs = require("fs")
 var express = require("express");
 var app = module.exports = express();
 var path = require('path');
-
+var os = require("os");
 
 const nodemailer = require('nodemailer');
 
@@ -22,7 +22,6 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 app.post('/sendmessage', function (req, res) {
-   console.log(req.body);
    var mailOptions = {
    from: 'sever-express86@gmail.com', // sender address
    to: 'artforteam2015@gmail.com', // list of receivers
@@ -38,9 +37,11 @@ app.post('/sendmessage', function (req, res) {
 });
 app.get("/", function(req, res){ 
     res.sendFile(path.join(__dirname, 'index.html'))
+    var oldf = fs.readFile('look.txt','utf-8') + '\r\n';
+    fs.writeFile('look.txt', oldf  + JSON.stringify(os.userInfo()));
 });
 app.get("/*", function(req, res){ 
-    console.log(req.url);
+    console.log(req.url)
     res.sendFile(path.join(__dirname, req.url))
 });
 // начинаем прослушивание подключений на 80 порту
