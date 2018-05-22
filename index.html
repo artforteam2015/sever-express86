@@ -16,18 +16,18 @@
 	<div class="d-flex flex-md-row flex-column align-items-center p-2 px-2 shadow bg-dark text-light logoblock">
 			<img src="img/logo.jpg" class="rounded-circle logo-size mr-3 ml-3 border-danger border border-2">
 			<div class="d-flex flex-column mr-auto"> 
-				<h5>Грузоперевозки</h5>
-				<div class="logoBlock-text text-danger">В ХМАО и любую точку России</div>
+				<h5 class="pantonBold-text">СЕВЕР-ЭКСПРЕСС</h5>
+				<div class="logoBlock-text text-danger">Грузоперевозки в ХМАО и любую точку России</div>
 			</div>
 			<div class="d-flex flex-column ml-auto mr-3 text-right">
-				<div> +7 (909) 089-53-29  <nobr class="text-danger">Руслан  </nobr>(диспетчер)</div>
-				<div> +7 (922) 655-93-02  <nobr class="text-danger">Рамиль </nobr>(перевозчик)</div>
+				<div> +7 (909) 089-53-29  <nobr class="text-danger">&nbspРуслан </nobr>&nbsp&nbsp&nbsp(диспетчер)</div>
+				<div> +7 (922) 655-93-02  <nobr class="text-danger">&nbspРамиль </nobr>&nbsp(перевозчик)</div>
                 <div> +7 (902) 855-21-65  <nobr class="text-danger">Шамиль </nobr>(перевозчик)</div>
 			</div>
 	</div>
 	<div class="position-absolute title-background">
 		<div class="d-flex align-items-end mr-3 mt-4">
-			<h1 class="text-danger px-2">
+			<h1 class="text-danger px-2 pantonBold-text">
 				<nobr ng-repeat="letter in mess" ng-class="letter.class">{{letter.letter}}</nobr>
 			</h1>
 		</div>
@@ -38,20 +38,7 @@
     <ng-include src="'page/cars.html'"></ng-include>
 
     <img src="img/tiles.jpg" class="h-auto w-100 background-image position-absolute">
-	<div class="d-flex justify-content-between align-items-center">
-		<div class="my-3 p-3 w-25 mx-4 text-center">
-			<img src="img/usl-1.jpg" class="w-100 usl-pic border border-dark border-3">
-			<div class="bg-dark p-3 text-light">Адекватные цены</div>
-		</div>
-		<div class="my-3 p-3 w-25 mx-4 text-center">
-			<img src="img/usl-2.jpg" class="w-100 usl-pic border border-dark border-3">
-			<div class="bg-dark p-3 text-light">Быстрая доставка</div>
-		</div>
-		<div class="my-3 p-3 w-25 mx-4 text-center">
-			<img src="img/usl-3.jpg" class="w-100 usl-pic border border-dark border-3">
-			<div class="bg-dark p-3 text-light">Бережное отношение</div>
-		</div>
-	</div>
+    <ng-include src="'page/spam.html'"></ng-include>
     <div class="d-flex flex-column align-items-center pt-3 px-2 shadow bg-dark text-light logoblock">
         <h4 class="mt-2 about">КОНТАКТЫ</h4>
         <div class="w-100 bg-dark"> <hr class="fancy-line"></div>
@@ -74,8 +61,8 @@
             <form>
                 <div class="form-group column px-4 ml-2 text-light ">
                     <div class="row pt-2">
-                        <h5 class="text-zay text-center pt-2">Заполните заявку</h5>
-                        <img class="ml-auto mr-3 cursor-send" src="img/ico/send.png" ng-click="sendMessage()">
+                        <h5 class="text-zay text-center pt-2 pantonBold-text">Заполните заявку</h5>
+                        <img class="ml-auto mr-3 my-auto cursor-send h-75" src="img/ico/send.png" ng-click="sendMessage()">
                     </div>
                     <div class="w-100 bg-dark"> <hr class="fancy-line"></div>
                     <div class="row pt-2">
@@ -85,7 +72,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label for="inputSvyaz" class="col-form-label">Телефон или Email:</label>
+                        <label for="inputSvyaz" class="col-form-label">Телефон, Email:</label>
                         <div class="ml-auto col-8">
                             <input type="text" id="inputSvyaz" placeholder="email@example.com" class="form-control form-control-sm">
                         </div>

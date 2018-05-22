@@ -11,7 +11,7 @@ h1{
 }
 
 .logoBlock-text{
-	font-size: 10px;
+	font-size: 11px;
 }
 
 .logoBlock{
@@ -90,11 +90,26 @@ hr.fancy-line {
     font-family: lato-medium;
     src: local(pompadur), url(./font/Lato-Medium.ttf);
 }
+@font-face {
+    font-family: panton;
+    src: local(pompadur), url(./font/Panton-Bold.otf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: panton;
+    src: local(pompadur), url(./font/Panton-Light.otf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: ptsans;
+    src: local(pompadur), url(./font/2221.ttf);
+}
 
 .about{
     font-size: 20px;
-    letter-spacing: 6px;
-    font-family: Stolzl-Thin;
+    letter-spacing: 3px;
+    font-family: panton;
+    font-weight: bold;
 }
 
 .telefont{
@@ -164,9 +179,6 @@ hr.fancy-line {
     text-overflow: ellipsis;
 }
 
-.usl-top{
-    background: rgba(255,255,255,0.7);
-}
 
 .no-margin{
     padding: 0 !important;
@@ -204,8 +216,25 @@ cursor: pointer;
 .lato-text{
     font-family: lato-medium;
 }
+.pantonBold-text{
+    font-weight: bold;
+    font-family: panton;
+}
+.pantonLight-text{
+    font-weight: lighter;
+    font-family: panton;
+}
+.ptsans-text{
+    font-family: ptsans;
+}
+
 
 .cursor-def{
 cursor: default;
 user-select: none; 
+}
+
+.usl-container{
+    background: rgba(255,255,255,0.7);
+
 }
