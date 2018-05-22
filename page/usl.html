@@ -1,8 +1,8 @@
 <div class="d-flex flex-md-row flex-column flex-wrap bg-dark">    
     <div class="col-md-4 wraptext col-12 no-margin" ng-repeat="usl in usls" ng-mouseover="hoverusl1 = true" ng-mouseleave="hoverusl1 = false">
-        <div class="usl1-box" ng-class="{'{{usl.hover}}':hoverusl1}">
-            <img src="{{usl.picnamedark}}" class="position-absolute w-100" ng-class="'{{usl.hoverScale2}}'">
-            <div class="position-absolute h-100 pt-1 px-4 text-justify" ng-class="'{{usl.hoverScale}}'">
+        <div class="usl1-box w-100" ng-class="{'{{usl.hover}}':hoverusl1}">
+            <img ng-src="{{usl.picnamedark}}" class="position-absolute w-100" ng-class="'{{usl.hoverScale2}}'">
+            <div class="position-absolute px-auto h-100 pt-1 px-4 text-justify" ng-class="'{{usl.hoverScale}}'">
                 <h5 class="text-light pantonBold-text text-center pt-1">{{usl.title}}</h5>
                 <hr class="fancy-line">
                 <div class="about-text usl-pre">{{usl.description}}</div>
@@ -10,7 +10,7 @@
             <div class="position-absolute usl-container w-100 usl-3">
                 <h5 class="usl-3 pt-2 px-3 pd-2 text-dark pantonBold-text text-center">{{usl.title}}</h5>
             </div>
-            <img src="{{usl.picname}}" class="usl-1 w-100">
+            <img ng-src="{{usl.picname}}" class="usl-1 w-100">
         </div>
     </div>
 </div>
